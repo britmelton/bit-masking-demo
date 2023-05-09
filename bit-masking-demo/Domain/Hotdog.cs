@@ -16,5 +16,10 @@ namespace bit_masking_demo.Domain
             Options.HasKetchup = true;
         }
 
+        public void AddMustard()
+        {
+            Options.HasMustard = true;
+        }
+
     }
 }

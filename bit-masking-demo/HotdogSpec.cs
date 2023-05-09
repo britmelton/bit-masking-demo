@@ -16,6 +16,19 @@ namespace bit_masking_demo
 
                 hotdog.Options.HasKetchup.Should().BeTrue();
             }
-        } 
+        }
+        public class WhenAddingMustard
+        {
+            [Fact]
+            public void ThenHotdogHasMustard()
+            {
+                var hotdog = new Hotdog();
+
+                hotdog.AddMustard();
+
+                hotdog.Options.HasMustard.Should().BeTrue();
+            }
+
+        }
     }
 }
