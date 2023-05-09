@@ -8,15 +8,16 @@ namespace bit_masking_demo
         public class WhenAddingKetchup
         {
             [Fact]
-            public void ThenMustardHasKetchup()
+            public void ThenHotdogHasKetchup()
             {
                 var hotdog = new Hotdog();
 
                 hotdog.AddKetchup();
 
-                hotdog.Options.HasKetchup.Should().BeTrue();
+                hotdog.Regular.Should().Be(OptionsEnum.Ketchup);
             }
         }
+
         public class WhenAddingMustard
         {
             [Fact]
@@ -26,7 +27,7 @@ namespace bit_masking_demo
 
                 hotdog.AddMustard();
 
-                hotdog.Options.HasMustard.Should().BeTrue();
+                hotdog.Regular.Should().Be(OptionsEnum.Mustard);
             }
 
         }

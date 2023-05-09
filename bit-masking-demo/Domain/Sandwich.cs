@@ -2,17 +2,34 @@
 {
     public class Sandwich
     {
-        public Options Options { get; set; } = new Options();
+        public OptionsEnum Regular { get; set; } = new OptionsEnum();
+        public OptionsEnum Extra { get; set; } = new OptionsEnum();
+        public OptionsEnum Lite { get; set; } = new OptionsEnum();
+        public OptionsEnum Exclude { get; set; } = new OptionsEnum();
+
+        public Sandwich()
+        {
+            Regular = OptionsEnum.Ketchup;
+        }
 
         public void AddKetchup()
         {
-            Options.HasKetchup = true;
+            Regular = OptionsEnum.Ketchup;
         }
 
         public void AddMustard()
         {
-            Options.HasMustard = true;
+           Regular = OptionsEnum.Mustard;
         }
 
+        public void AddExtraMustard()
+        {
+            Extra = OptionsEnum.Mustard;
+        }
+
+        public void AddExtraCheese()
+        {
+            Extra = OptionsEnum.Cheese;
+        }
     }
 }

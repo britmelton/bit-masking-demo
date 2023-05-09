@@ -14,7 +14,7 @@ namespace bit_masking_demo
 
                 sandwich.AddKetchup();
 
-                sandwich.Options.HasKetchup.Should().BeTrue();
+                sandwich.Regular.Should().Be(OptionsEnum.Ketchup);
             }
         }
 
@@ -27,7 +27,33 @@ namespace bit_masking_demo
 
                 sandwich.AddMustard();
 
-                sandwich.Options.HasMustard.Should().BeTrue();
+                sandwich.Regular.Should().Be(OptionsEnum.Mustard);
+            }
+        }
+
+        public class WhenAddingExtraCheese
+        {
+            [Fact]
+            public void ThenSandwichHasExtraCheese()
+            {
+                var sandwich = new Sandwich();
+
+                sandwich.AddExtraCheese();
+
+                sandwich.Extra.Should().Be(OptionsEnum.Cheese);
+            }
+
+        }
+
+        public class WhenCreatingASandwich
+        {
+            [Fact]
+            public void ThenSandwichHasDefaultOptions()
+            {
+                var sandwich = new Sandwich();
+
+                sandwich.Regular.Should().Be(OptionsEnum.Ketchup);
+                sandwich.Extra.Should().Be(OptionsEnum.None);
             }
         }
     }

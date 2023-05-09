@@ -1,24 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace bit_masking_demo.Domain
+﻿namespace bit_masking_demo.Domain
 {
     public class Hotdog
     {
-
-        public Options Options { get; set; } = new Options();
+        public OptionsEnum Regular { get; set; } = new OptionsEnum();
+        public OptionsEnum Extra { get; set; } = new OptionsEnum();
+        public OptionsEnum Lite { get; set; } = new OptionsEnum();
+        public OptionsEnum Exclude { get; set; } = new OptionsEnum();
 
         public void AddKetchup()
         {
-            Options.HasKetchup = true;
+            Regular = OptionsEnum.Ketchup;
         }
 
         public void AddMustard()
         {
-            Options.HasMustard = true;
+            Regular = OptionsEnum.Mustard;
         }
 
     }
