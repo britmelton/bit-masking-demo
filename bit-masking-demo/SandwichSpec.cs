@@ -17,5 +17,18 @@ namespace bit_masking_demo
                 sandwich.HasKetchup.Should().BeTrue();
             }
         }
+
+        public class WhenAddingMustard
+        {
+            [Fact]
+            public void ThenSandwichHasMustard()
+            {
+                var sandwich = new Sandwich();
+
+                sandwich.AddMustard();
+
+                sandwich.HasMustard.Should().BeTrue();
+            }
+        }
     }
 }
