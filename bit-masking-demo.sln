@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bit-masking-demo", "bit-masking-demo\bit-masking-demo.csproj", "{9A599484-7FF4-4E3D-B654-186DA7D7899E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A599484-7FF4-4E3D-B654-186DA7D7899E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A599484-7FF4-4E3D-B654-186DA7D7899E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A599484-7FF4-4E3D-B654-186DA7D7899E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A599484-7FF4-4E3D-B654-186DA7D7899E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {926F1B14-4DB2-4CB9-B8F6-7D0C01118CF5}
+	EndGlobalSection
+EndGlobal
