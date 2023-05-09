@@ -14,7 +14,7 @@ namespace bit_masking_demo
 
                 sandwich.AddKetchup();
 
-                sandwich.HasKetchup.Should().BeTrue();
+                sandwich.Options.HasKetchup.Should().BeTrue();
             }
         }
 
@@ -27,7 +27,7 @@ namespace bit_masking_demo
 
                 sandwich.AddMustard();
 
-                sandwich.HasMustard.Should().BeTrue();
+                sandwich.Options.HasMustard.Should().BeTrue();
             }
         }
     }

@@ -2,17 +2,16 @@
 {
     public class Sandwich
     {
-        public bool HasKetchup { get; set; }
-        public bool HasMustard { get; set; }
+        public Options Options { get; set; } = new Options();
 
         public void AddKetchup()
         {
-            HasKetchup = true;
+            Options.HasKetchup = true;
         }
 
         public void AddMustard()
         {
-            HasMustard = true;
+            Options.HasMustard = true;
         }
 
     }
